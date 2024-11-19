@@ -90,6 +90,10 @@ a {
 	color: #2E3092;
 	text-decoration: none;
 	outline: none;
+	
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
 }
 a:visited {
 	background-color: transparent;
@@ -259,7 +263,7 @@ h2 { font-size: 15pt; }
 .lbl-toggle { max-width: 100%; }
 .collapsible-content { max-width: 100%; }
 
-.image-logo-imprint { margin-left: 50px; margin-bottom: -5%; max-width: 150px; height: auto; }
+.image-logo-imprint { margin-left: 10px; margin-bottom: -5%; max-width: 150px; height: auto; }
 
 /* Screen width of 450px or more: */
 @media (min-width: 550px) {
