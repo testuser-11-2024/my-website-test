@@ -241,8 +241,42 @@ input[type='checkbox'] { display: none; }
 }
 
 /* Contact Form (see "Kontakt & Rezept"): */
-.form-input { border-radius: 5px; min-height: 35px; min-width: 100%; }
-.form-button { min-height: 35px; padding: 15px; border-radius: 5px; background: #2E3092; }
+#contact-form {
+	max-width: 350px; /* Form maximum width */
+    margin: auto; /* Center the form */
+    background: #fff; /* White background for form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.form-group {
+	display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column direction */
+    margin-bottom: 15px; /* Space between fields */
+}
+.form-group label {
+	margin-bottom: 5px; /* Space between label and input */
+    font-weight: normal; /* Bold label */
+}
+.form-input {
+	padding: 10px; /* Padding in input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    width: 100%; /* Full width on smaller screens */
+	box-sizing: border-box; /* Include padding/border in element's total width */
+}
+.form-button {
+	background-color: #2E3092; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Top/bottom & left/right padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+}
+.form-button:hover {
+	background-color: #2E3092; /* Darker green on hover */
+}
 
 /* ### Screen Size Adjustments: Different site component sizes for different screen resolutions */
 /* ### Note: Adjustments for screen width of less than 768px are the default values (mobile first design). */
@@ -265,7 +299,7 @@ h2 { font-size: 15pt; }
 
 .image-logo-imprint { margin-left: 10px; margin-bottom: -5%; max-width: 150px; height: auto; }
 
-/* Screen width of 450px or more: */
+/* Screen width of 550px or more: */
 @media (min-width: 550px) {
 	body {
 		background-color: #FFFFFF;
@@ -277,6 +311,10 @@ h2 { font-size: 15pt; }
 	.tabs-container { padding: 3%; }
 	
 	.image-logo-imprint { margin-left: 20px; margin-bottom: -5%; max-width: 200px; height: auto; }
+	
+	.form-group { max-width: 360px; }
+	.form-input { max-width: 350px; }
+	.form-button { max-width: 350px; }
 }
 
 /* Screen width of 768px or more: */
